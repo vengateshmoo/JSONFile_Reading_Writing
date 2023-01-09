@@ -1,0 +1,15 @@
+
+How to Read JSON File in frameworks?
+
+ 
+Steps to READ a JSON File
+--------------------------
+Inverse of the JSON File writing operations:
+1.Create object for JSON parser.(any file readind in java we remember -PARSER)
+2.File reader ---> read from venagtesh.json File
+3.Parse the read file using parse() and store it in Object.
+4.To get the values,from the parsed object, use get(). but to do that ,we have to convert the object to Json Object.
+5.Now use, get() with key to retrieve the data them after typecasting.
+6.To fetch data from Json Array ,Use iterator() and Iterate them and print.
+
+

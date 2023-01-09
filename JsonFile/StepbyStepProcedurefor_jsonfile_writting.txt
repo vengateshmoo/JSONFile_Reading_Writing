@@ -1,0 +1,40 @@
+1.What is a Json File?
+JSON----> Stands for JavaScript Object Notation.
+JSON File------> A file contains,JSON Object with .json file Extension
+-------------------------------------------------------------------------------
+
+2.Why do we need JSON?
+    In this modern era, we have  lot of programming languages.
+    Almost all of as use different webservices in our daily life
+    (Eg.Weather report,Currency conversion,enquiring Gold Rates,cricket Scores)
+    our browser is the point of concept,to make the request to the server,
+    receive the response from the server,process the repponse and render it to user.
+    A Web server may be implemented with any programing languages like java,python,etc.
+    our browser can understand JavaScript.so there has to be a common,
+    language independent data transmission between a web application and a web server.
+-----------------------------------------------------------------------------------------------------
+JSON is a light weight data-interchange format
+JSON is a "self-describing" and easy to understand
+JSON is language independent.
+--------------------------------------------------------------------------------------------
+
+A sample json File Structure 
+{
+    "Id":001,
+    "First_name":"Vengatesh",
+    "Last_name":"Moo",
+    "Email_Id":"vengateshmoorthi@outlook.com",
+
+}
+
+Steps to write a JSON File
+
+Pre Requisite:Dowmload and add the JSON-SIMPLE Jar in our project.
+other libraries avaliable to read/write Json: Jackson 2 or Gson
+https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple/1.1.1
+
+1.Create JsonObject
+2.Add key value pairs using put()
+3.if json Array is needed,create object for Json Array then add the element to it.
+4.To add Json array to json  object, use same put()
+5.To write this Json to a file,use file writer or any file writing options (Buffered writer,File Out Put Stream(FOS),Path) 
